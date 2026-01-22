@@ -11,7 +11,9 @@ void display(){
 System.out.println(r+"+"+c+"i");
 }
 static void add(int r1,int c1,int r2,int c2){
-System.out.println((r1+r2)+"+"+(c1+c2)+"i");
+int re=r1+r2;
+int co=c1+c2;
+System.out.println("sum="+re+"+"+co+"i");
 }
 }
 class complex{
