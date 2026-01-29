@@ -1,0 +1,33 @@
+import java.util.*;
+class sort
+{
+public static void main(String args[]){
+int n,i,j;
+String temp;
+Scanner sc=new Scanner(System.in);
+System.out.println("Enter number of strings: ");
+n=sc.nextInt();
+sc.nextLine();
+String[] str=new String[n];
+System.out.println("Enter the strings: ");
+for(i=0;i<n;i++){
+str[i]=sc.nextLine();
+}
+for(i=0;i<n-1;i++){
+for(j=i+1;j<n;j++){
+if(str[i].compareTo(str[j])>0)
+{
+temp=str[i];
+str[i]=str[j];
+str[j]=temp;
+}
+}
+}
+System.out.println("\nSorted strings: ");
+for(i=0;i<n;i++){
+System.out.println(str[i]);
+}
+}
+}
+
+
